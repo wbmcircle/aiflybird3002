@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest login log</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/anonymous_style.css">
+    <link rel="icon" href="../../assets/images/login_logo.png" type="image/x-icon">
+    <!-- <link href="../../node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/select_flag.css"> -->
+    <!-- <link rel="stylesheet" href="../../assets/css/daterangepicker.css"> -->
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="menu-md d-flex flex-column small fly-scrollbar" id="sidebar">
+            <button class="btn-close btn-close-white btn-sm d-md-none" id="mobile-close"></button>
+    
+            <div class="d-flex justify-content-center pt-4 pb-3 px-1">
+                <img src="../../assets/img/wLogo.png" alt="" style="width: 180px; height: 80px;" id="full_logo">
+            </div>
+            <div class="accordion mt-3 mt-md-4 border-0 py-0 " id="submenu-system">
+                <ui class="list-unstyled">
+                    <li class="menu-item ">
+                        <a href="../dashboard.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/home_white.png" alt="" class="mx-2" style="width: 20px; height: 17px;">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../contact.html" class="d-flex text-decoration-none text-reset hover ">
+                            <img src="../../assets/icon_white/contacts_white.png" alt="" class="mx-2" style="width: 20px; height: 21px;">
+                            <span>My Contacts</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../web_office.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/monitor_white.png" alt="" class="mx-2 icon-sm">
+                            <span>Web Office</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../calendar.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/contact_white.png" alt="" class="mx-2 icon-sm">
+                            <span>My Calender</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../todo_list.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/list_white.png" alt="" class="mx-2 icon-sm">
+                            <span>To Do List</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../mail/mail_inbox.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/email-white.png" alt="" class="mx-2 icon-sm">
+                            <span>Mail</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../web_meeting.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/meeting_white.png" alt="" class="mx-2 icon-sm">
+                            <span>Web Meeting</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../recording_manage.html" class="d-flex text-decoration-none text-reset hover">
+                            <img src="../../assets/icon_white/recording_white.png" alt="" class="mx-2" style="height: 15px; width:20px; margin-top:3px;">
+                            <span>Recording Manage</span>
+                        </a>
+                    </li>
+                    <li class="menu-item mb-0">
+                        <div class="accordion-item text-start  border-0 bg-side">
+                            <a href="#" class="text-decoration-none p-0 text-white  " role="button"
+                            data-bs-toggle="collapse" data-bs-target="#submenu-knowledge-collapse" aria-expanded="false"
+                            aria-controls="submenu-system-collapse">
+                                <div class="d-flex align-items-center bg-side hover">
+                                    <img src="../../assets/icon_white/hat_white.png" alt="" class="mx-2 icon-sm">
+                                    <span class="me-auto">Knowlodge Manage</span>
+                                    <img src="../../assets/icon_white/chevron-down-white.svg" alt="">
+                                </div>
+                            </a>
+                            <div id="submenu-knowledge-collapse" class="accordion-collapse collapse bg-side" aria-labelledby="sub-collapse" data-bs-parent="#submenu-system">
+                                <div class="accordion-body p-0 bg-side">
+                                    <div class="accordion border-0 py-0" id="knowlodge-sub">
+                                        <div class="accordion border-0 py-0" id="knowlodge-sub">
+                                            <div class="accordion-item border-0 ps-3 bg-side rounded-0">
+                                                <a href="../knowledge/privateFiles.html#privateFiles" class="text-decoration-none p-0 text-white" id="privateFiles" role="button">
+                                                    <div class="d-flex align-items-center bg-side hover">
+                                                        <img src="../../assets/icon_white/folder_white.png" alt="" class="mx-2" style="width: 20px; height: 17px;">
+                                                        <span>Private Files</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="accordion-item border-0 ps-3 bg-side rounded-0">
+                                                <a href="../knowledge/publicFiles.html#publicFiles" class="text-decoration-none p-0 text-white" id="publicFiles" role="button">
+                                                    <div class="d-flex align-items-center bg-side hover">
+                                                        <img src="../../assets/icon_white/open-folder-white.png" alt="" class="mx-2" style="width: 21px; height: 18px;">
+                                                        <span>Public Files</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../bulletin.html#bulletin" class="d-flex text-decoration-none text-reset hover" id="bulletin">
+                            <img src="../../assets/icon_white/news_white.png" alt="" class="mx-2" style="width: 18px; height: 18px;">
+                            <span>New Bulletin</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <div class="accordion-item text-start  border-0  bg-side">
+                            <a href="#" class="text-decoration-none p-0 text-white  " role="button"
+                            data-bs-toggle="collapse" data-bs-target="#submenu-system-collapse" aria-expanded="false"
+                            aria-controls="submenu-system-collapse">
+                                <div class="d-flex align-items-center bg-side hover">
+                                    <img src="../../assets/icon_white/setting_white.png" alt="" class="mx-2 icon-sm" >
+                                    <span class="me-auto">System Manage</span>
+                                    <img src="../../assets/icon_white/chevron-down-white.svg" alt="">
+                                </div>
+                            </a>
+                            <div id="submenu-system-collapse" class="accordion-collapse collapse" aria-labelledby="sub-collapse" data-bs-parent="#submenu-system">
+                                <div class="accordion-body p-0">
+                                    <ul class="list-unstyled bg-side ps-4 mb-0">
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/company_register.html#company-register" class="text-decoration-none text-reset" id="company-register">Company Register Info</a></li>
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/system_info.html#system-info" class="text-decoration-none text-reset" id="system-info">System Info</a></li>
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/meeting_status.html#meeting-status" class="text-decoration-none text-reset" id="meeting-status">Meeting Status</a></li>
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/messenger_status.html#messenger-status" class="text-decoration-none text-reset" id="messenger-status">Messenger Status</a></li>
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/dept_setting.html#dept-setting" class="text-decoration-none text-reset" id="dept-setting">Department Setting</a></li>
+                                        <li class="py-2 small ps-4 hover"><a href="../system_manage/user_manage.html#user-manage" class="text-decoration-none text-reset" id="user-manage">User Manage</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item active">
+                        <div class="accordion-item text-start  border-0 bg-side">
+                            <a href="#" class="text-decoration-none p-0 text-white  " role="button"
+                            data-bs-toggle="collapse" data-bs-target="#submenu-systemlog-collapse" aria-expanded="false"
+                            aria-controls="submenu-system-collapse">
+                                <div class="d-flex align-items-center bg-side hover">
+                                    <img src="../../assets/icon_white/document_white.png" alt="" class="" style="width: 15px; height: 20px; margin: 0 10px 0 12px;">
+                                    <span class="me-auto">System Log</span>
+                                    <img src="../../assets/icon_white/chevron-down-white.svg" alt="">
+                                </div>
+                            </a>
+                            <div id="submenu-systemlog-collapse" class="accordion-collapse collapse show" aria-labelledby="sub-collapse" data-bs-parent="#submenu-system">
+                                <div class="accordion-body p-0">
+                                    <ul class="list-unstyled bg-side ps-4 mb-0">
+                                        <li class="py-2 small ps-4 hover "><a href="../system_log/userlogin_log.html#userlogin-log" class="text-decoration-none text-reset " id="userlogin-log">User Login Log</a></li>
+                                        <li class="py-2 small ps-4 hover active-background"><a href="../system_log/guestlogin_log.html#guestlogin-log" class="text-decoration-none text-reset" id="guestlogin-log">Guest Login Log</a></li>
+                                        <li class="py-2 small ps-4 hover "><a href="../system_log/filedown_log.html#filedown-log" class="text-decoration-none text-reset" id="filedown-log">File Download Log</a></li>
+                                        <li class="py-2 small ps-4 hover "><a href="../system_log/newsread_log.html#newsread-log" class="text-decoration-none text-reset" id="newsread-log">News Read Log</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ui>
+            </div>
+        </div>
+        <div class="content overflow-auto d-flex flex-column">
+            <div class="d-flex flex-column p-3 bg-gray">
+                <div class="d-flex">
+                    <a href="#" class=" text-decoration-none text-reset me-2" role="button" id="menu-toggle"><img src="../../assets/img/menu-button-of-three-horizontal-lines.png" alt="" class="icon-sm"></a>
+                    <div class="d-flex flex-grow-1 justify-content-md-between justify-content-end">
+                        <div class="d-none d-md-flex align-items-center">
+                            <span class="mx-3 pointer">Meeting Now</span>
+                            <span class="mx-3 pointer">Messenger</span>
+                            <span class="mx-3 pointer">Recording</span>
+                            <span class="mx-3 pointer">Mail</span>
+                            <span class="d-flex align-items-center mx-3 pointer"  data-bs-toggle="collapse" data-bs-target="#favourite-collapse" aria-expanded="false">
+                                My Favourite
+                                
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="dropdown" id="noti-dropdown">
+                                <a class="email-alarm" data-bs-toggle="tooltip" data-placement="bottom" title="notification" role="button" id="dropdown-toggle">
+                                    <img src="../../assets/icon/bell-fill.svg" alt="" class="icon-md">
+                                    <span class="mail-notice">6</span>
+                                </a>
+                                <div class="dropdown-content" id="dropdown-content">
+                                    <div class="p-1 pt-2 text-center border-bottom">
+                                        <h6 class="mb-0">Notification (6)</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center notification" role="button">
+                                        <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                        <div class="d-flex flex-column ms-2">
+                                            <span class="lh-12 fw-bold" >Username</span>
+                                            <span class="lh-12" >this is test message</span>
+                                            <span class="mt-1">3 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center notification" role="button">
+                                        <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                        <div class="d-flex flex-column ms-2">
+                                            <span class="lh-12 fw-bold" >Username</span>
+                                            <span class="lh-12" >this is test message</span>
+                                            <span class="mt-1">3 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center notification" role="button">
+                                        <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                        <div class="d-flex flex-column ms-2">
+                                            <span class="lh-12 fw-bold" >Username</span>
+                                            <span class="lh-12" >this is test message</span>
+                                            <span class="mt-1">3 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center notification" role="button">
+                                        <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                        <div class="d-flex flex-column ms-2">
+                                            <span class="lh-12 fw-bold" >Username</span>
+                                            <span class="lh-12" >this is test message</span>
+                                            <span class="mt-1">3 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div id="more">
+                                        <div class="d-flex align-items-center notification" role="button">
+                                            <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                            <div class="d-flex flex-column ms-2">
+                                                <span class="lh-12 fw-bold" >Username</span>
+                                                <span class="lh-12" >this is test message</span>
+                                                <span class="mt-1">3 min ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center notification" role="button">
+                                            <img src="../../assets/img/avtars.png" alt="" style="height: 50px; width: 50px;">
+                                            <div class="d-flex flex-column ms-2">
+                                                <span class="lh-12 fw-bold" >Username</span>
+                                                <span class="lh-12" >this is test message</span>
+                                                <span class="mt-1">3 min ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="text-decoration-none" role="button" id="noti-more">View more</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="dropdown">
+                                <div class="d-flex align-items-center ms-4" role="button" data-bs-toggle="dropdown">
+                                    <img src="../../assets/img/avtars.png" alt="" class="icon-md">
+                                    <span class="ms-2 small">Username</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-start small" aria-labelledby="navbarDropdown">
+                                    <a href="../profile.html" class="dropdown-item text-decoration-none text-reset small">Profile</a>
+                                    <a href="#" class="dropdown-item text-decoration-none text-reset small" data-bs-toggle="modal" data-bs-target="#reset-psw">Reset Password</a>
+                                    <a href="#" class="dropdown-item text-decoration-none text-reset small" data-bs-toggle="modal" data-bs-target="#relay-setting">Mail Relay Setting</a>
+                                    <a href="#" class="dropdown-item text-decoration-none text-reset small" data-bs-toggle="modal" data-bs-target="#office-setting">Weboffice Setting</a>
+                                    <a href="#" class="dropdown-item text-decoration-none text-reset small">Help</a>
+                                    <a href="#" class="dropdown-item text-decoration-none text-reset small">Log out</a>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-inline ms-2">
+                                <div class="drop-down">
+                                    <select name="options">
+                                        <option class="en" value="en" data-image = '../../assets/img/flag/rounded/united-states.png' style="background-image:url('../../assets/img/flag/rounded/united-states.png');">English</option>
+                                        <option class="fr" value="fr" data-image = '../../assets/img/flag/rounded/china.png'  style="background-image:url('../../assets/img/flag/rounded/china.png');" selected>Simplified Ch </option>
+                                        <option class="nl" value="nl" data-image = '../../assets/img/flag/rounded/taiwan.png' style="background-image:url('../../assets/img/flag/rounded/taiwan.png');">Tranditional Ch</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-md-none mx-3" data-bs-toggle="collapse" data-bs-target="#favourite-collapse" aria-expanded="false">
+                                <img src="../../assets/icon/favourite.png" alt="" class="icon-md">
+                            </div>
+                            <div class="d-md-none dropdown">
+                                <a class="d-flex align-items-center ms-1" data-bs-toggle="dropdown">
+                                    <img src="../../assets/img/chevron-down.svg" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center ms-1 px-2" href="#">
+                                        <span class="small text-start ms-1 me-auto ">Meeting Now</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center ms-1 px-2" href="#">
+                                        <span class="small text-start ms-1 me-auto ">Messenger</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center ms-1 px-2" href="#">
+                                        <span class="small text-start ms-1 me-auto ">Recording</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center ms-1 px-2" href="#">
+                                        <span class="small text-start ms-1 me-auto ">Mail</span>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mt-2" id="favourite-collapse">
+                    <ul class="favourite-container fly-scrollbar">
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/img/logo@2x.png" alt="">
+                            </a>
+                            <span class="favourite-title">Imflybird</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/img/logo@2x.png" alt="">
+                            </a>
+                            <span class="favourite-title">Imflybird</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/img/logo@2x.png" alt="">
+                            </a>
+                            <span class="favourite-title">Imflybird</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/images/login_logo.png" alt="">
+                            </a>
+                            <span class="favourite-title">www.imflybird.com</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="favourite-wrapper">
+                            <a href="https://aiflybird.com:3001" class="favourite-item" target="blank">
+                                <img src="../../assets/img/logo@2x.png" alt="">
+                            </a>
+                            <span class="favourite-title">Imflybird</span>
+                            <div class="dropdown" style="position: absolute; top:0; right:0;">
+                                <img src="../../assets/icon/three-dots.svg" alt="" class="favourite-option" data-bs-toggle='dropdown'>
+                                <div class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#rename-favourite">
+                                        <img src="../../assets/icon/pen-alt.svg" alt="" class="icon-sm me-2">
+                                        Rename
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset py-2" data-bs-toggle="modal" data-bs-target="#delete-favourite">
+                                        <img src="../../assets/icon/garbage-can.png" alt="" class="icon-sm me-2">
+                                        Remove
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pb-md-4 mt-3">
+                            <div class="favourite-add" data-bs-toggle="modal" data-bs-target="#add-favourite" data-bs-toggle="tooltip" data-placement="bottom" title="Add to Favourite">
+                                <img src="../../assets/icon/plus.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column my-1 overflow-auto flex-grow-1">
+                <div class="d-flex m-3 mt-md-4">
+                    <!-- <img src="../../assets/icon/user_setting.png" alt="" class="icon-md"> -->
+                    <h5 class="ms-2">Guest login Log</h5>
+                    <a href="#" class="d-md-none ms-3" data-bs-toggle="collapse" data-bs-target="#search">
+                        <img src="../../assets/img/chevron-down.svg" alt="">
+                    </a>
+                </div>
+                <div class="collapse mb-3 px-3" id="search">
+                    <div class="bg-deep-dark rounded-3 p-3">
+                        <select class="form-select mb-3" aria-label="user-select-option" style="font-size: 14px;">
+                            <option selected style="font-size: 13px;">All Department</option>
+                            <option value="1" style="font-size: 13px;">Test</option>
+                        </select>
+                        <input type="text" id="config-demo-mobile" class="form-control form-control-sm mb-3" style="font-size: 14px;">
+                        <input type="text" class="form-control mb-3" placeholder="Please input name or email">
+                        <div class="row d-flex justify-content-between mx-2 " >
+                            <button class="col-5 btn btn-warning" style="font-size: 14px;">Search</button>
+                            <button class="col-5 btn btn-warning" style="font-size: 14px;">Reset</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="d-none d-md-block mx-2">
+                    <div class="d-flex justify-content-center m-2 mt-1 rounded-3 bg-deep-dark">
+                        <div class="row d-flex align-items-center justify-content-evenly w-100 px-md-5">
+                            <div class="col-auto col-md-3">
+                                <select class="form-select" aria-label="user-select-option" style="font-size: 14px;">
+                                    <option selected >All Department</option>
+                                    <option value="1">Test</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="checkbox" id="timePicker" checked hidden>
+                                <input type="checkbox" id="autoUpdateInput" checked hidden>
+                                <input type="checkbox" id="linkedCalendars" checked hidden>
+                                <input type="checkbox" id="showCustomRangeLabel" checked hidden>
+                                <input type="checkbox" id="ranges" checked="checked" hidden>
+                                <input type="text" id="config-demo" class="form-control" style="font-size: 14px;">
+                            </div>
+                            <div class="col-auto col-md-5">
+                                <div class="input-group form-control-sm mt-3 mb-3 ">
+                                    <input type="text" class="form-control form-control" placeholder="Please input name or email" aria-label="" aria-describedby="button-addon2">
+                                    <button class="btn btn-warning " type="button" id="button-addon2" data-bs-target="tooltip" data-placement="bottom" title="Search"><img src="../../assets/img/search.png" alt="" class="icon-sm"></button>
+                                    <button class="btn btn-warning border-1 border-start" type="button" id="reset" data-bs-target="tooltip" data-placement="bottom" title="Reset"><img src="../../assets/img/close1.png" alt="" class="icon-sm"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mt-1 border-1 rounded-3 m-3 flex-grow-1 overflow-auto bg-deep-dark">
+                    <div class="d-flex justify-content-between p-3 align-items-center">
+                        <h6 class="text-white mb-0 ms-md-5">Total : 7</h6>
+                        <div class="d-flex">
+                            
+                        </div>
+                    </div>
+                    <div class="mx-2 flex-grow-1 overflow-auto fly-scrollbar">
+                        <table class="table table-hover table-striped table-sm align-middle text-center bg-white h-100 mb-0" style="table-layout: auto;">
+                            <thead class="bg-secondary">
+                                <tr class="align-middle">
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">No</th>
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">DateTime</th>
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Account</th>
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Name</th>
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">IP Address</th>
+                                    <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="small overflow-auto flex-grow-1">
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                                <tr class="main-row">
+                                    <td class="border-end border-white">1</td>
+                                    <td class="border-end border-white">2021-12-29 17:05:46</td>
+                                    <td class="border-end border-white">User@example.com</td>
+                                    <td class="border-end border-white">UserName</td>
+                                    <td class="border-end border-white">123.456.789.0</td>
+                                    <td class="border-end border-white">Some action</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="d-flex justify-content-end py-3 small me-2 text-white">
+                        <span class="me-1">items per page :</span>
+                        <select name="" id="" class="border-0 me-1 bg-white border-bottom">
+                            <option value="5" selected>5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <span class="mx-3">1 - 5 of 7</span>
+                        <img src="../../assets/img/chevron-down.svg" class="mx-2" alt="" style="transform: rotate(90deg);">
+                        <img src="../../assets/img/chevron-down.svg" class="mx-2" alt="" style="transform: rotate(-90deg);">
+                    </div>
+                </div>
+            </div>
+            <div class="p-2 mx-2 d-flex justify-content-md-end small bg-gray justify-content-center">
+                <a href="#" class="d-none d-md-inline mx-2 text-reset">Terms of Use</a>
+                <a href="#" class="d-none d-md-inline mx-2 text-reset">Privacy and Cookie Polices</a>
+                <a href="#" class="mx-2 text-reset">@2021 FlyingBird Weboffice and Imflybird</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- modal -->
+    <!-- create-user -->
+    <div class="modal" id="create-user" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg h-75">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-deep-dark py-1">
+                    <div class="d-flex align-items-center">
+                        <img src="../../assets/icon_white/user-plus-white.svg" alt="" style="width: 30px; height: 50px;">
+                        <h5 class="my-0 ms-2 text-white">Create New User</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body d-flex flex-column pt-2 pt-md-3 overflow-auto">
+                    <div class="d-flex align-items-center justify-content-between small border-bottom pb-2 pb-md-3">
+                        <div class="ms-md-3 relative">
+                            <img src="../../assets/icon/edit-avatar1.png" alt="" style="width:80px;height:80px; border-radius: 50%;">
+                            <a href="#" role="button" class="text-decoration-none create-upload-avatar">
+                                <label for="import" role="button">
+                                    <img src="../../assets/icon/photo-camera.png" alt="" class="icon-sm">
+                                </label>
+                                <input type="file" class="form-control" id="import" hidden>
+                            </a>
+                        </div>
+                        <div class="row" style="width: 80%;">
+                            <div class="col-12 col-md-6">
+                                <label for="create-realname" class="form-label">Real Name* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-realname'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-nickname" class="form-label">Nick Name* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-nickname'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column small ps-md-5 ms-md-5 overflow-auto fly-scrollbar">
+                        <div class="row mt-2 mt-md-2 ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-username" class="form-label">Department* :</label>
+                                <select class="form-select dropdown-toggle" aria-label="user-select-option" style="font-size: 14px;">
+                                    <option selected style="font-size: 14px;">Option 1</option>
+                                    <option value="1" style="font-size: 14px;">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-duty" class="form-label">Duty* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-duty'>
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="create-email" class="form-label">Email (Account)* :</label>
+                                <input type="email" class="form-control form-control-sm" id='create-email'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-phone" class="form-label">Phone Number* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-phone'>
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="create-psw" class="form-label">Password* :</label>
+                                <input type="password" class="form-control form-control-sm" id='create-psw'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-confirm" class="form-label">Confirm Password* :</label>
+                                <input type="password" class="form-control form-control-sm" id='create-confirm'>
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="create-message-limit" class="form-label">Leave Message Time Limit(mins)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-message-limit'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-max-connection" class="form-label">Max Connections* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-max-connection'>
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="create-max-cloud" class="form-label">Max cloud disk space(MB)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-max-cloud'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="create-office-limit" class="form-label">WebOffice Space Limit(MB)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='create-office-limit'>
+                            </div>
+                        </div>
+                        <div class="row mt-3  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-between">
+                                <label for="" class="me-2 mb-2 mb-md-0">Role of Dept :</label>
+                                <div class="d-flex justify-content-start">
+                                    <div class="form-check mb-1">
+                                        <label class="form-check-label" for="create-leader">Leader</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="create-leader" >
+                                    </div>
+                                    <div class="form-check mb-1 mx-3">
+                                        <label class="form-check-label" for="create-member">Member</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="create-member" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block col-md-6 mt-2 mt-md-0">
+                                <div class="form-check mb-1 ms-1">
+                                    <label class="form-check-label" for="create-anony">Allow Anonymous Visit</label>
+                                    <input class="form-check-input" type="checkbox" value="" id="create-anony" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block pt-1 pb-3">
+                    <div class="d-md-none small ps-2 my-2">
+                        <div class="form-check mb-1 ms-1">
+                            <label class="form-check-label" for="create-anony">Allow Anonymous Visit</label>
+                            <input class="form-check-input" type="checkbox" value="" id="create-anony" checked>
+                        </div>
+                    </div>
+                    <div class="row mt-md-2 small ps-md-5 ms-md-5">
+                        <div class="col-12 col-md-6 d-flex pe-3 align-items-center">
+                            <label for="">Grant:</label>
+                            <select class="form-select dropdown-toggle mx-2 form-select-sm" aria-label="user-select-option" style="font-size: 14px;">
+                                <option selected style="font-size: 14px;">Option 1</option>
+                                <option value="1" style="font-size: 14px;">Option 2</option>
+                            </select>
+                            <label for="">Permission*</label>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3 mt-md-2 mt-md-0 d-flex justify-content-evenly">
+                            <button type="button" class="btn  btn-navy text-white">Save</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Create New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delete -->
+    <div class="modal" id="delete-contact" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="min-width: 350px; max-width: 350px;">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="../../assets/img/warning1.png" alt="" style="width: 80px; height: 80px;">
+                        <div class="d-flex flex-column ms-2">
+                            <h4 class="mb-0">DELETE USERS</h4>
+                            <p class="mb-0">This action cannot be undone.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer p-3 d-flex justify-content-evenly">
+                    <button type="button" class="btn btn-outline-secondary" style="height: 40px; width: 135px;" data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button" class="btn btn-danger" style="height: 40px; width: 135px;">DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reset-group -->
+    <div class="modal" id="reset-group" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <img src="../../assets/icon_white/group_white.png" alt="" class="icon-md">
+                        <h5 class="my-0 ms-3 text-white">Group Setting</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <label for="exampleDataList" class="form-label">Add him to :</label>
+                    <input class="form-control" list="group-options" id="exampleDataList" placeholder="Input or Select Group">
+                    <datalist id="group-options">
+                        <option value="many to many">
+                        <option value="Partner">
+                        <option value="Test">
+                        <option value="Develop">
+                    </datalist>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-navy text-white">Confirm</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit-user -->
+    <div class="modal" id="edit-contact" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg h-75">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-deep-dark py-1">
+                    <div class="d-flex align-items-center">
+                        <img src="../../assets/icon_white/user-plus-white.svg" alt="" style="width: 30px; height: 50px;">
+                        <h5 class="my-0 ms-2 text-white">Edit User</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body d-flex flex-column pt-2 pt-md-3 overflow-auto">
+                    <div class="d-flex align-items-center justify-content-between small border-bottom pb-2 pb-md-3">
+                        <div class="ms-md-3 relative">
+                            <img src="../../assets/icon/edit-avatar1.png" alt="" style="width:80px;height:80px; border-radius: 50%;">
+                            <a href="#" role="button" class="text-decoration-none create-upload-avatar">
+                                <label for="import" role="button">
+                                    <img src="../../assets/icon/photo-camera.png" alt="" class="icon-sm">
+                                </label>
+                                <input type="file" class="form-control" id="import" hidden>
+                            </a>
+                        </div>
+                        <div class="row" style="width: 80%;">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-realname" class="form-label">Real Name* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-realname'>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="edit-nickname" class="form-label">Nick Name* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-nickname' value="UserName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column small ps-md-5 ms-md-5 overflow-auto fly-scrollbar">
+                        <div class="row mt-2 mt-md-2 ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-dept" class="form-label">Department* :</label>
+                                <select class="form-select dropdown-toggle" aria-label="user-select-option" style="font-size: 14px;">
+                                    <option selected style="font-size: 14px;">Option 1</option>
+                                    <option value="1" style="font-size: 14px;">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="edit-duty" class="form-label">Duty* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-duty' value="Owner">
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-email" class="form-label">Email (Account)* :</label>
+                                <input type="email" class="form-control form-control-sm" id='edit-email' value="user@example.com">
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="edit-phone" class="form-label">Phone Number* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-phone' value="1234567890">
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-message-limit" class="form-label">Leave Message Time Limit(mins)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-message-limit' value="5">
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="edit-max-connection" class="form-label">Max Connections* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-max-connection' value="100">
+                            </div>
+                        </div>
+                        <div class="row mt-2 mt-md-2  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6">
+                                <label for="edit-max-cloud" class="form-label">Max cloud disk space(MB)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-max-cloud' value="200">
+                            </div>
+                            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                                <label for="edit-office-limit" class="form-label">WebOffice Space Limit(MB)* :</label>
+                                <input type="text" class="form-control form-control-sm" id='edit-office-limit' value="1000">
+                            </div>
+                        </div>
+                        <div class="row mt-3  ps-md-5 ms-md-4">
+                            <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-between">
+                                <label for="" class="me-2 mb-2 mb-md-0">Role of Dept :</label>
+                                <div class="d-flex justify-content-start">
+                                    <div class="form-check mb-1">
+                                        <label class="form-check-label" for="edit-leader">Leader</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="edit-leader" >
+                                    </div>
+                                    <div class="form-check mb-1 mx-3">
+                                        <label class="form-check-label" for="edit-member">Member</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="edit-member" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block col-md-6 mt-2 mt-md-0">
+                                <div class="form-check mb-1 ms-1">
+                                    <label class="form-check-label" for="edit-anony">Allow Anonymous Visit</label>
+                                    <input class="form-check-input" type="checkbox" value="" id="edit-anony" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block pt-1 pb-3">
+                    <div class="d-md-none small ps-2 my-2">
+                        <div class="form-check mb-1 ms-1">
+                            <label class="form-check-label" for="edit-anony">Allow Anonymous Visit</label>
+                            <input class="form-check-input" type="checkbox" value="" id="edit-anony" checked>
+                        </div>
+                    </div>
+                    <div class="row mt-md-2 small ps-md-5 ms-md-5">
+                        <div class="col-12 col-md-6 d-flex pe-3 align-items-center">
+                            <label for="">Grant:</label>
+                            <select class="form-select dropdown-toggle mx-2 form-select-sm" aria-label="user-select-option" style="font-size: 14px;">
+                                <option selected style="font-size: 14px;">Option 1</option>
+                                <option value="1" style="font-size: 14px;">Option 2</option>
+                            </select>
+                            <label for="">Permission*</label>
+                        </div>
+                        <div class="col-12 col-md-6 mt-3 mt-md-2 mt-md-0 d-flex justify-content-evenly">
+                            <button type="button" class="btn  btn-navy text-white">Save</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Create New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- send-message -->
+    <div class="modal" id="send-message" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg h-75">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <img src="../../assets/icon_white/email-white.png" alt="" class="icon-md">
+                        <h5 class="my-0 ms-3 text-white">Send Mail</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body d-flex flex-column overflow-auto px-4 py-2">
+                    <div class="d-flex align-items-center my-1 pb-2 border-bottom">
+                        <div class="message-to">To:</div>
+                        <div class="message-to-address d-flex align-items-center">
+                            user@example.com
+                            <img src="../../assets/icon_white/close1 copy.png" alt="" class="icon-sm ms-2 attach-close" role="button">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <label for="" class="form-label mb-0 small">Subject :</label>
+                        <input type="text" class="message-subject" placeholder="">
+                    </div>
+                    <div class="d-flex flex-column mt-2 flex-grow-1 overflow-auto">
+                        <label for="" class="form-label small">Content :</label>
+                        <div class="flex-grow-1 overflow-auto fly-scrollbar" id="editor"></div>
+                    </div>
+                    <div class="mt-2">
+                        <label for="" class="form-label small">Attach Files :</label>
+                        <div class="d-flex border border-1 rounded-3 p-2">
+                            <div class="message-to-address d-flex align-items-center small">
+                                Attach-files.zip
+                                <img src="../../assets/icon_white/close1 copy.png" alt="" class="icon-sm ms-2 attach-close" role="button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="dropdown">
+                        <a href="#" class="text-decoration-none text-reset mx-3 border-1 border p-2 border-dark rounded-2" data-bs-toggle='dropdown' role="button">
+                            <img src="../../assets/img/attach.png" alt="" class="icon-sm me-1">
+                            Attach
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-start small" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset small">
+                                <img src="../../assets/icon/link.png" alt="" class="icon-sm me-2">
+                                Add Attachment
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset small" data-bs-toggle="modal" data-bs-target="#add-recording">
+                                <img src="../../assets/icon/video-camera-with-play-button.png" alt="" class="icon-sm me-2">
+                                Add My Recording
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center text-decoration-none text-reset small" data-bs-toggle="modal" data-bs-target="#add-document">
+                                <img src="../../assets/icon/document.png" alt="" class="icon-sm me-2">
+                                Add My Document
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark">Send</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-dark ms-3">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mail-relay-setting -->
+    <div class="modal" id="relay-setting" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-3 text-white">Mail Realy Setting</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Mail Login URL* :</label>
+                        <input type="text" class="form-control form-control-sm" id='realy-login-url' value="https://mail@163.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Relay E-mail* :</label>
+                        <input type="text" class="form-control form-control-sm" id='relay-email' value="https://imflybird@126.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="" class="form-label">Email Password* :</label>
+                        <input type="text" class="form-control form-control-sm" id='relay-password' value="ALKDFNGAGHOEGPQDCV">
+                    </div>
+                    <div class="form-check mb-1">
+                        <label class="form-check-label" for="relay-check">
+                            Manual SMTP Setting
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="relay-check">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-navy text-white">Test</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- weboffice-setting -->
+    <div class="modal" id="office-setting" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-3 text-white">Weboffice Setting</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body px-2">
+                    <div class="row px-3 small">
+                        <div class="col-12 col-md-6 pt-2 border">
+                            <div class="d-flex flex-column mb-3">
+                                <span class="mb-2">Search name and email address</span>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='search' checked> 
+                                            <label class="ms-2" for="">All</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='search'>
+                                            <label  class="ms-2 nowrap" for="">Only to my contacts</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='search'>
+                                            <label  class="ms-2" for="">Prohibit</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column mb-3">
+                                <span class="mb-2">Allow outside user leave message to me</span>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='leave' checked>
+                                            <label  class="ms-2" for="">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='leave'>
+                                            <label  class="ms-2" for="">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column mb-3">
+                                <span class="mb-2">Leaving a message</span>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='leaving-message' checked>
+                                            <label  class="ms-2" for="">All</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='leaving-message'>
+                                            <label  class="ms-2 nowrap" for="">Only to my contacts</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='leaving-message'>
+                                            <label  class="ms-2" for="">Prohibit</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column mb-3">
+                                <span class="mb-2">Query online status</span>
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='Query' checked>
+                                            <label  class="ms-2" for="">All</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='Query'>
+                                            <label  class="ms-2 nowrap" for="">Only to my contacts</label>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <input class="form-radio" type="radio" value="" name='Query'>
+                                            <label  class="ms-2" for="">Prohibit</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 relative">
+                                <label for="" class="form-label">Message Time Limit :</label>
+                                <input type="text" class="form-control form-control-sm" id='office-message-time' value="5" maxlength="10">
+                                <span class="value-unit">mins</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pt-2 mt-2 mt-md-0  border">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Visit Links :</label>
+                                <input type="text" class="form-control form-control-sm" id='visit-link' value="http://117.21.178.36/mmc/custom_inc_goto_guest.php?u=47&c=visit">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Message Links :</label>
+                                <input type="text" class="form-control form-control-sm" id='message-link' value="http://117.21.178.36/mmc/custom_inc_goto_guest.php?u=47&c=visit">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Max Connection* :</label>
+                                <input type="text" class="form-control form-control-sm" id='max-connection' value="100">
+                            </div>
+                            <div class="row mb-3 d-flex align-items-baseline">
+                                <div class="col relative">
+                                    <label for="" class="form-label small">Weboffice Space Limit :</label>
+                                    <input type="text" class="form-control form-control-sm" id='offcie-space-limit' value="1000" maxlength="10">
+                                    <span class="value-unit">MB</span>
+                                </div>
+                                <div class="col relative">
+                                    <label for="" class="form-label small">Remain Space :</label>
+                                    <input type="text" class="form-control form-control-sm " id='office-remain-space' value="783.4" maxlength="10">
+                                    <span class="value-unit">MB</span>
+                                </div>
+                            </div>
+                            <div class="row  d-flex align-items-baseline mb-2">
+                                <div class="col relative">
+                                    <label for="" class="form-label small" >Max Cloud Space Limit :</label>
+                                    <input type="text" class="form-control form-control-sm " id='cloud-space' value="200" maxlength="10">
+                                    <span class="value-unit">MB</span>
+                                </div>
+                                <div class="col relative">
+                                    <label for="" class="form-label small">Remain Space :</label>
+                                    <input type="text" class="form-control form-control-sm " id='cloud-remain-space' value="187.4" maxlength="10">
+                                    <span class="value-unit">MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- add-recording -->
+    <div class="modal" id="add-recording" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered h-75">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-2 text-white">Select Recording Files</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body small px-2  overflow-auto fly-scrollbar pt-0 mt-2">
+                    <table class="table table-hover table-striped text-center overflow-auto ">
+                        <thead>
+                            <tr class="align-middle">
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="select-all">
+                                    </div>
+                                </th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">ID</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Title</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Start Time</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">1</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">2</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">3</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">4</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">5</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">6</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">7</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">8</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">9</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">10</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">11</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">12</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">13</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">14</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">15</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">16</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">17</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">18</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">19</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">20</td>
+                                <td class="border-end border-white">Meeage from test visit</td>
+                                <td class="border-end border-white">2021-12-21 09-13-42</td>
+                                <td class="border-end border-white">32s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#send-message" class="btn btn-navy text-white">Attach</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#send-message" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add-document -->
+    <div class="modal" id="add-document" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered h-75">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-2 text-white">Select Cloud Files</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body small px-2  overflow-auto fly-scrollbar pt-0 mt-2">
+                    <table class="table table-hover table-striped text-center overflow-auto ">
+                        <thead>
+                            <tr class="align-middle">
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="select-all">
+                                    </div>
+                                </th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">ID</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Title</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">File Name</th>
+                                <th scope="col" style="background-color: aliceblue; position: sticky; top: 0; z-index: 1;">Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">1</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">2</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">3</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">4</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">5</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">6</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">7</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">8</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">9</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">10</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">11</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">12</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">13</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">14</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">15</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">16</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">17</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">18</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">19</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                            <tr>
+                                <td class="border-end border-white">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="border-end border-white">20</td>
+                                <td class="border-end border-white">Test Document</td>
+                                <td class="border-end border-white">Practical Development Scenarios.pdf</td>
+                                <td class="border-end border-white">1.7MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#send-message" class="btn btn-navy text-white">Attach</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#send-message" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reset-psw -->
+    <div class="modal" id="reset-psw" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-3 text-white">Reset Password</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="" class="form-label small">Old Password* :</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Type old password..">
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="form-label small">New Password* :</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Type new password..">
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="form-label small">Confirm Password* :</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Please confirm password..">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-navy text-white">Change</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- delete-favourite -->
+     <div class="modal" id="delete-favourite" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="min-width: 350px; max-width: 350px;">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="../../assets/img/warning1.png" alt="" style="width: 80px; height: 80px;">
+                        <div class="d-flex flex-column ms-2">
+                            <h4 class="mb-0">DELETE ITEM</h4>
+                            <p class="mb-0">This action cannot be undone.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer p-3 d-flex justify-content-evenly">
+                    <button type="button" class="btn btn-outline-secondary" style="height: 40px; width: 135px;" data-bs-dismiss="modal">CANCEL</button>
+                    <button type="button" class="btn btn-danger" style="height: 40px; width: 135px;">DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rename-favourite -->
+    <div class="modal" id="rename-favourite" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-3 text-white">Rename Website</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="" class="form-label">Name*</label>
+                        <input type="text" class="form-control" value="https://aiflybird.com:3001">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-navy text-white px-4">Save</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- add-favourite -->
+     <div class="modal" id="add-favourite" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-deep-dark">
+                    <div class="d-flex">
+                        <h5 class="my-0 ms-3 text-white">Add to Favourite</h5>
+                    </div>
+                    
+                    <a href="#" role="button" class="text-decoration-none modal-close" data-bs-dismiss="modal">
+                        <img src="../../assets/icon_white/close1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="form-label">URL</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-navy text-white px-4">Add</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-navy text-white">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script type="text/javascript" src="../../node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+    <script src="../../assets/js/contact_1.js"></script>
+    <script src="../../assets/js/table_action.js"></script>
+    <script src="../../assets/js/dropdown_more.js"></script>
+    <script src="../../assets/js/message.js"></script>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/select_flag.js"></script>
+    <script src="../../assets/js/moment.min.js"></script>
+    <script src="../../assets/js/daterangepicker.js"></script>
+    <script src="../../assets/js/userlogin.js"></script>    
+</body>
+</html>

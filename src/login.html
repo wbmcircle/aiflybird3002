@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamwork</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../assets/css/login_style.css"> -->
+    <link rel="stylesheet" href="../assets/css/anonymous_style.css">
+    <link rel="icon" href="../assets/images/login_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sliding"></div>
+    <div class="main">
+        <div class="login">
+            <div class="login-box" id="login-part">
+                <img src="../assets/images/logo.png" class="logo" alt="logo_image">
+                <form>
+                    <div class="moblie-form">
+                        <div class="user-box">
+                            <input type="text" name="" placeholder="E-mail" required="">
+                            <label>E-mail</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="" placeholder="Password" required="">
+                            <label>Password</label>
+                        </div>
+                        <button class="mobile-login"><a href="dashboard.html" class="text-decoration-none text-reset">Login</a></button>
+                    </div>
+                    <div class="option">
+                        <a href="anonymous_access.html" target="blank">Anonymous access</a>
+                        <a href="#" id="reset-pwd">Forgot Password</a>
+                    </div>
+                    <div class="mt-5">
+                        <a href="contact.html" class="login-submit">
+                            Login
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- reset-step-1 -->
+            <div class="login-field px-md-4" id="step-one">
+                <img src="../assets/images/logo.png" class="d-none d-md-inline logo" alt="logo_image">
+                <div class="d-flex align-items-center mb-2 my-md-3 describe">
+                    <div class="login-step-number">1</div>
+                    <span class="mobile-lang ms-2 fw-bold fs-6">Verification</span>
+                </div>
+                <form class="mx-1">
+                    <div class="moblie-form mt-2">
+                        <div class="user-box">
+                            <input type="text" name="" required="" placeholder="Phone Number">
+                            <label>Phone Number</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" required="" style="width: 50%;" placeholder="Verification">
+                            <label>Verification</label>
+                            <img src="../assets/images/vText.png" alt="" class="d-none d-lg-inline mx-2" style="width: 60px; height: 25px;">
+                            <img src="../assets/images/vText-gray.png" alt="" class="d-lg-none mx-2" style="width: 50px; height: 25px;">
+                            <a href="#" role="button" class="" data-bs-toggle="tooltip" data-placement="bottom" title="Refresh">
+                                <img src="../assets/images/refresh.png" alt="" style="width: 30px; height: 30px;" class="d-none d-lg-inline mx-0">
+                                <!-- <img src="../assets/images/refresh-gray.png" alt="" style="width: 30px; height: 30px;" class="d-lg-none mx-0"> -->
+                                <a href="#" class="d-lg-none mx-0" style="color: rgb(13, 78, 139);">Refresh</a>
+                            </a>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" class=" mb-0" name="" required="" style="width: 50%;" placeholder="Code">
+                            <label>Code</label>
+                            <button class="code-btn  mb-0">Get Code</button>
+                        </div>
+                        <div class="d-none d-md-flex justify-content-end mt-md-4 mb-md-3 btn-wrap step-action-pc-btn">
+                            <a href="login.html" class="login-submit me-3">
+                                Sign in
+                            </a>
+                            <a href="#" id="to-set" class="step-btn">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center d-md-none mt-3 step-action-mobile-btn">
+                        <button type="button" class="code-btn w-100 mx-0 mb-2" id="to-set-moblie">Next</button>
+                        <a href="login.html" class="step-sign">Sign In</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- reset-step-2 -->
+            <div class="login-field px-md-4" id="step-two">
+                <img src="../assets/images/logo.png" class="d-none d-md-inline logo" alt="logo_image">
+                <div class="d-flex align-items-center mb-2 my-md-3 describe">
+                    <div class="login-step-number">2</div>
+                    <span class="mobile-lang ms-2 fw-bold fs-6">Set New Password</span>
+                </div>
+                <form class="mt-2 mx-1">
+                    <div class="moblie-form mt-3">
+                        <div class="user-box">
+                            <input type="password" name="" required="" placeholder="New Password">
+                            <label>New Password</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" class="mb-0" name="" required="" placeholder="Confirm Password">
+                            <label class="mb-0">Confirm Password</label>
+                        </div>
+                        <div class="d-none d-md-flex justify-content-end my-3 mt-5 step-action-pc-btn">
+                            <a href="login.html" class="login-submit">
+                                Sign in
+                            </a>
+                            <a href="#" id="return-verification" class="step-btn mx-2">
+                                Back
+                            </a>
+                            <a href="#" id="to-completion" class="step-btn">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center d-md-none mt-3 step-action-mobile-btn">
+                        <button type="button" class="code-btn w-100 mx-0 mb-3" id="to-completion-moblie">Next</button>
+                        <a href="login.html" class="step-sign">Sign In</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- reset-step-3 -->
+            <div class="login-field px-md-4" id="step-three">
+                <img src="../assets/images/logo.png" class="d-none d-md-inline logo" alt="logo_image">
+                <div class="d-flex align-items-center mb-2 my-md-3 describe">
+                    <div class="login-step-number">3</div>
+                    <span class="mobile-lang ms-2 fw-bold fs-6">Complete</span>
+                </div>
+                <form class="mt-2 mx-1">
+                    <div class="moblie-form mt-3">
+                        <div class="my-lg-4 pt-lg-3 text-center mobile-lang">
+                            <div class="d-none d-md-flex justify-content-center align-items-center reset-complete mx-auto success-pc-img">
+                                <img src="../assets/images/bag-check-fill.svg" alt="">
+                            </div>
+                            <div class="d-flex d-md-none justify-content-center align-items-center success-mobile-img">
+                                <img src="../assets/images/login-lock.png" style="width: 60px;height:60px; border-radius: 50%;" alt="">
+                            </div>
+                            <p class="d-none d-md-block mt-3 pwd-success pwd-success-pc" style="color: #0ad343;">New Password had been set successfully</p>
+                            <p class="d-md-none mt-3 pwd-success pwd-success-mobile" style="color: rgb(13, 78, 139);">New Password had been set successfully</p>
+                            <p class="pwd-success mobile-lang mb-0">Please remember your password</p>
+                        </div>
+                        <div class="d-none d-md-inline m-2 mb-0 m-lg-3 step-action-pc-btn">
+                            <a href="login.html" class="login-submit">Sign in</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center d-md-none mt-3 step-action-mobile-btn">
+                        <a href="login.html" class="code-btn w-100 mx-0 mb-3">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="lang-btn">
+            <div class="drop-down">
+                <select name="options">
+                    <option class="en" value="en" data-image = '../assets/img/flag/rounded/united-states.png' style="background-image:url('../assets/img/flag/rounded/united-states.png');">English</option>
+                    <option class="fr" value="fr" data-image = '../assets/img/flag/rounded/china.png'  style="background-image:url('../assets/img/flag/rounded/china.png');" selected>简体中文 </option>
+                    <option class="nl" value="nl" data-image = '../assets/img/flag/rounded/taiwan.png' style="background-image:url('../assets/img/flag/rounded/taiwan.png');">繁體中文</option>
+                </select>
+            </div>
+        </div>
+        <a href="#" class="text-decoration-none">Copyright© 2022 www.imflybird.com All Rights Reserved</a>
+    </div>
+    
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select_flag.js"></script>
+    <script>
+        jQuery().ready(function () {
+            jQuery('.drop-down .button').addClass('mobile-lang').addClass('v-lang')
+        });
+    </script>
+    <script>
+        const login_part = document.getElementById('login-part');
+        const verification = document.getElementById('step-one');
+        const set_pwd = document.getElementById('step-two');
+        const completion = document.getElementById('step-three');
+        const reset = document.getElementById('reset-pwd');
+        const to_set = document.getElementById('to-set');
+        const return_sign = document.getElementById('return-sign');
+        const to_completion = document.getElementById('to-completion');
+        const return_verification = document.getElementById('return-verification');
+
+        verification.style.display = 'none';
+        set_pwd.style.display = 'none';
+        completion.style.display = 'none';
+
+        reset.addEventListener('click', show_verify);
+        to_set.addEventListener('click', show_setting);
+        to_completion.addEventListener('click', show_completion);
+        return_verification.addEventListener('click', back_verify);
+
+        function show_verify() {
+            login_part.style.display = 'none';
+            verification.style.display = 'block';
+        }
+
+        function show_setting() {
+            verification.style.display = 'none';
+            set_pwd.style.display = 'block';
+        }
+
+        function show_completion() {
+            set_pwd.style.display = 'none';
+            completion.style.display = 'block';
+        }
+
+        function back_sign() {
+            login_part.style.display = 'block';
+            verification.style.display = 'none';
+        }
+
+        function back_verify() {
+            verification.style.display = 'block';
+            set_pwd.style.display = 'none';
+        }
+        $('#to-set-moblie').click(function(){
+            show_setting()
+        })
+        $('#to-completion-moblie').click(function(){
+            show_completion()
+        })
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="384" height="512">
+	<title>file-solid-svg</title>
+	<style>
+		.s0 { fill: #fff7d6 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m256.9 160h127.1v304c0 26.5-21.5 48-48 48h-288c-26.5 0-48-21.5-48-48v-416c0-26.5 21.5-48 48-48h176v128c0 17.7 14.3 32 32.9 32zm127.1-32h-128v-128z"/>
+</svg>

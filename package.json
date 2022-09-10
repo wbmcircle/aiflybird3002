@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "froala-editor": "^4.0.8",
+    "node-sass": "^7.0.3",
+    "sass": "^1.54.9"
+  }
+}

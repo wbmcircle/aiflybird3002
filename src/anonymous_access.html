@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamwork</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/anonymous_style.css">
+    <link rel="icon" href="../assets/images/login_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="h-100" style="position: relative;">
+        <a href="#" class="text-decoration-none rounded-pill" role="button">
+            <img src="../assets/images/index.png" alt="" class="icon-1 rounded-pill" id="to_top">
+        </a>
+        <!-- banner -->
+        <div class="d-flex flex-row-reverse banner">
+            <div class="d-none d-md-inline m-2 me-4" >
+                <select class="form-select border border-1 border-dark rounded-pill lh-1" aria-label="user-select-option">
+                    <option value="en" selected>English</option>
+                    <option value="ch">Chinese</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="d-flex m-2">
+            <!-- sidebar -->
+            <div class="d-none d-md-inline me-1 bg-deep-dark rounded-3 mb-2 mb-md-0 card-font side ps-3" id="anony-sidebar">
+
+                <div class="accordion small mt-3 mt-md-4 border-0 bg-deep-dark pb-1" id="sub-accordion">
+                    <div class="accordion-item text-start bg-deep-dark border-0 mb-2">
+                        <a href="#" class="text-decoration-none p-0 " role="button"
+                        data-bs-toggle="collapse" data-bs-target="#sub-collapse" aria-expanded="false"
+                        aria-controls="sub-collapse">
+                            <div class="d-flex align-items-center py-2  mt-lg-0 icon-hover">
+                                <img src="../assets/images/home-gray.png" alt="" class="icon-2">
+                                <span class="card-font">大连协同天下电子商务科技有限公司(8)</span>
+                            </div>
+                        </a>
+                        <div id="sub-collapse" class="accordion-collapse collapse show" aria-labelledby="sub-collapse" data-bs-parent="#sub-accordion">
+                            <div class="accordion-body p-0">
+                                <ul class="list-unstyled">
+                                    <li class=" list-group-item bg-deep-dark border-0 p-0">
+                                        <a href="#" class="d-block text-decoration-none  p-3 item-active rounded-3" role="button">
+                                            <img src="../assets/images/sub-ico.png" alt="" class="icon-1">
+                                            <span class="ms-3   card-font item-hover">开发部 (6)</span>
+                                        </a>
+                                    </li>
+                                    <li class=" list-group-item bg-deep-dark border-0 p-0">
+                                        <a href="#" class="d-block text-decoration-none  p-3 item-active rounded-3" role="button">
+                                            <img src="../assets/images/sub-ico.png" alt="" class="icon-1">
+                                            <span class="ms-3   card-font item-hover">市场部 (5)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- members -->
+            <div class="px-0 p-md-3 pt-md-1 ms-md-1 bg-gray rounded-3 flex-grow-1">
+                <!-- sidebar-toggle -->
+                <div class="d-none d-md-inline m-md-2">
+                    <a class="text-decoration-none" id="menu-toggle" role="button">
+                        <img src="../assets/images/menu-button-of-three-horizontal-lines.png" alt="" class="icon-2">
+                    </a>
+                </div>
+
+
+                
+                <!-- mobile-menu-field -->
+                <div class="d-md-none accordion small border-0 m-2" id="menu-accordion">
+                    <div class="accordion-item text-start border-0 mb-2 bg-gray">
+                        <a href="#" class="text-decoration-none p-0 px-2" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#menu-collapse" aria-expanded="true"
+                        aria-controls="menu-collapse">
+                            <img src="../assets/images/menu-button-of-three-horizontal-lines.png" alt="" class="icon-2">
+                        </a>
+                        <div id="menu-collapse" class="accordion-collapse collapse mt-2 rounded-3" aria-labelledby="menu-collapse" data-bs-parent="#menu-accordion">
+                            <div class="accordion-body p-0 rounded-3 " >
+                                
+                                <div class="row p-2">
+                                    <div class="col">
+                                        <div class="h-100" style="position: relative; box-sizing: content-box;">
+                                            <div href="#" class="rounded-pill d-flex justify-content-center align-items-center message-search-bar text-decoration-none bg-deep-dark h-100" role="button"
+                                                data-bs-toggle="modal" data-bs-target="#menu-search">
+                                                <img src="../assets/images/search.png" alt="" class="input-search icon-2 custom-searchbar">
+                                                <span class="d-block card-font fs-6">Search</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="position: relative;">
+                                        <select class="form-select d-inline rounded-pill px-4 bg-deep-dark card-font" aria-label="lang-select-option">
+                                            <option class="small" selected>English <img src="../assets/images/flag/united-states.png" alt="" class="icon-2"></option>
+                                            <option class="small" value="1">Chinese</option>
+                                            <option class="small" value="2">Russian</option>
+                                        </select>
+                                        <img src="../assets/images/chevron-down.svg" alt="" class="lang-down">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- searchbar -->
+                <div class="d-none d-md-flex justify-content-center m-2 mt-1 my-4 rounded-3 p-3 bg-deep-dark">
+                    <div class="row d-flex align-items-center justify-content-evenly">
+                        <div class="col-auto">
+                            <select class="form-select" aria-label="user-select-option">
+                                <option selected>Only online users</option>
+                                <option value="1">All</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <div class="input-group form-control-sm mt-3 mb-3 searchbar-with-icon">
+                                <input type="text" class="form-control form-control" placeholder="Please input search keywords" aria-label="" aria-describedby="button-addon2" style="width: 300px;">
+                                <button class="btn btn-brown" type="button" id="reset" data-bs-target="tooltip" data-placement="bottom" title="Reset"><img src="../assets/images/cards/close1.png" alt="" class="icon-4"></button>
+                                <button class="btn btn-brown border-1 border-start" type="button" id="button-addon2" data-bs-target="tooltip" data-placement="bottom" title="Search"><img src="../assets/images/search.png" alt="" class="input-search icon-4"></button>
+                                <button class="btn btn-brown border-1 border-start" type="button" id="button-addon2" data-bs-target="tooltip" data-placement="bottom" title="Alphabet Sort"><img src="../assets/images/cards/sort.png" alt="" class="icon-4"></button>
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center text-white small">
+                            <span class="me-1">Online : </span>
+                            <span class="online"></span>
+                            <span class="me-1">Offline : </span>
+                            <span class="offline"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-lists -->
+                <div class="d-flex flex-column justify-content-center" style="position: relative;">
+                    <div class="card-wrapper">
+                        <!-- user-card -->
+                        <div class="card card-font mb-3 mx-2">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="small ">ST 12345</span> -->
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card card-font mb-3 mx-2">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="small ">ST 12345</span> -->
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card card-font mb-3 mx-2">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="small ">ST 12345</span> -->
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card card-font mb-3 mx-2">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="small ">ST 12345</span> -->
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card card-font mb-3 mx-2">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="small ">ST 12345</span> -->
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="d-none card card-font mb-3 mx-2 more">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="d-none card card-font mb-3 mx-2 more">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="d-none card card-font mb-3 mx-2 more">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="d-none card card-font mb-3 mx-2 more">
+                            <div class="d-flex"  style='position: relative;'>
+                                <div class="d-flex flex-column ms-35 ms-md-4">
+                                    <h5 class="mt-6 card-name">Song Dong Dong</h5>
+                                    <h6 class="mb-3 mb-md-4  fw-bold">开发部 qq</h6>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/phone-white.svg" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        +123-456-7890
+                                    </span>
+                                    <span class="small ">
+                                        <img src="../assets/icon_white/email-white.png" alt="" class="me-1" style="width: 15px; height: 15px;">
+                                        username-long-text-test@example.com
+                                    </span>
+                                    <div class="d-flex mt-md-2 mt-1">
+                                        <div class="d-flex flex-column align-items-center me-3">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">weboffice</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="../assets/images/conference/qrcode_white.png" alt="" class="icon-3">
+                                            <span class="card-font fs-7">wechat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column" style="position: absolute; top: 0; right: 5px;">
+                                    <div class="card-avatar">
+                                        <div class="status-avatar">
+                                            <img src="../assets/images/conference/avtars.png" alt="" class="card-image">
+                                            <span class="net-status"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3 mt-3 ms-md-5">
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Visit"><img src="../assets/images/weboffice-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="Leave Multimedia Message"><img src="../assets/images/recording-1.png" alt="" class="icon-2"></a>
+                                        <a href="#" class="text-decoration-none text-reset small ms-4" data-bs-toggle="tooltip" data-place="bottome" title="favorite"><img src="../assets/images/download1.png" alt="" class="icon-2"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-2">
+                        <a href="#" class="btn btn-brown card-font" role="button" id="see-more"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- info -->
+        <div class="d-none d-md-flex m-2">
+
+            <!-- company and address -->
+            <div class="side d-flex flex-column align-items-center py-2 bg-deep-dark rounded-3 me-1 mb-2 mb-md-0">
+                <img src="../assets/images/login_logo-gray.png" alt="" style="width: 150px; height: 150px;" class="mt-3">
+                <p class="text-center small mb-auto mt-4 fw-light  card-font">
+                    Dalian Synergy World Electronic Commerce <br>
+                    Technology Co.Ltd
+                </p>
+                <p class="text-center small mt-3 fw-light  card-font">
+                    Dalian High-tech Industrial Park <br>
+                    541 Huangpu Road <br> 
+                    Zip Code: 116023 <br>
+                    Email: imflybird@126
+                </p>
+            </div>
+
+            <!-- send-message -->
+            <div class="flex-grow-1 p-0 bg-deep-dark rounded-3 ms-md-1">
+                <div class="m-3 p-3 ms-md-5 ps-md-5">
+                    <strong class="card-font fs-3">Write to Us</strong>
+                </div>
+                <div class="form d px-4 px-md-5 mx-md-5 mb-4 mt-2 card-font">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="username" class="form-label small fw-bold mb-0">Name*</label>
+                            <input type="text" class="send-message" id="username">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="user-email" class="form-label small fw-bold mb-0">Email*</label>
+                            <input type="email" class="send-message" id="user-email">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-subject" class="form-label small fw-bold mb-1">Subject*</label>
+                        <input type="text" class="send-message" id="user-subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-message" class="form-label small fw-bold mb-1">Message*</label>
+                        <textarea name="" id="user-message" cols="30" rows="2" class="send-message"></textarea>
+                    </div>
+                    <div class="mb-3 mt-5">
+                        <button type="submit" class="btn btn-brown">Send Messages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-deep-dark p-2 text-center small card-font">
+            <div class="d-flex d-md-none justify-content-evenly my-2">
+                <a href="#" class="card-font"  data-bs-toggle="modal" data-bs-target="#about-us">About Us</a>
+                <a href="#" class="card-font"  data-bs-toggle="modal" data-bs-target="#write-us">Write Us</a>
+            </div>
+            <p class="mb-0 p-2">Copyright© 2021 Dalian Synergy World Electronic Commerce Technology Co.Ltd</p>
+        </div>
+    </div>
+
+    <!-- modal-part -->
+    <!-- about-us -->
+    <div class="modal" id="about-us" tabindex="-1" aria-labelledby="about-us" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-deep-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-sm text-white btn-close-white" data-bs-dismiss="modal" style="color: white;"></button>
+                </div>
+                <div class="modal-body pt-0 text-center">
+                    <img src="../assets/images/login_logo-gray.png" alt="" style="width: 150px; height: 150px;">
+                    <p class="text-center small mb-auto mt-4 fw-light  card-font">
+                        Dalian Synergy World Electronic Commerce <br>
+                        Technology Co.Ltd
+                    </p>
+                    <p class="text-center small mt-3 fw-light  card-font">
+                        Dalian High-tech Industrial Park <br>
+                        541 Huangpu Road <br> 
+                        Zip Code: 116023 <br>
+                        Email: imflybird@126
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- write-us -->
+    <div class="modal" id="write-us" tabindex="-1" aria-labelledby="write-us" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-deep-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-sm text-white btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="m-3 mx-4">
+                    <strong class="card-font fs-3">Write to Us</strong>
+                </div>
+                <div class="form d px-4 mb-3 mt-2 card-font">
+                    <div class="mb-3">
+                        <label for="username" class="form-label d-block small fw-bold mb-0">Name*</label>
+                        <input type="text" class="send-message" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-email" class="form-label small fw-bold mb-1">Email*</label>
+                        <input type="text" class="send-message" id="user-email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-subject" class="form-label small fw-bold mb-1">Subject*</label>
+                        <input type="text" class="send-message" id="user-subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-message" class="form-label small fw-bold mb-1">Message*</label>
+                        <textarea name="" id="user-message" cols="30" rows="2" class="send-message"></textarea>
+                    </div>
+                    <div class="mb-1 mt-5">
+                        <button type="submit" class="btn btn-brown">Send Messages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- initial-submit -->
+    <div class="modal" id="initial-submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="write-us" aria-hidden="false">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-deep-dark">
+                
+                <div class="modal-body mt-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mx-4 mb-4">
+                                <strong class="card-font fs-3">Meet On Weboffice</strong>
+                                <p class="mt-4 mb-3 card-font">
+                                    Please input your basic information firstly
+                                </p>
+                            </div>
+                            <div class="form d px-4 mb-3 mt-2 card-font">
+                                <div class="mb-3">
+                                    <label for="username-submit" class="form-label d-block small fw-bold mb-0">Name*</label>
+                                    <input type="text" class="send-message" id="username-submit">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="user-email-submit" class="form-label small fw-bold mb-1">Email*</label>
+                                    <input type="text" class="send-message" id="user-email-submit">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone-number" class="form-label small fw-bold mb-1">Subject*</label>
+                                    <input type="text" class="send-message" id="phone-number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="user-message" class="form-label small fw-bold mb-1">Company*</label>
+                                    <input type="text" class="send-message" id="company">
+                                </div>
+                                <div class="mb-1 mt-5">
+                                    <button type="submit" class="btn btn-brown" data-bs-dismiss="modal">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block col me-2" style="background:url('../assets/images/back-1.jpg'); background-size: cover;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu-search -->
+    <div class="modal" id="menu-search" tabindex="-1" aria-labelledby="write-us" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-deep-dark">
+                <div class="modal-header border-white pb-0">
+                    <h2 class="card-font ms-3">Search</h2>
+                    <button type="button" class="btn-close btn-sm text-white btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body mb-2">
+                    
+                    <div class="d-flex align-items-center p-1 icon-hover bg-deep-dark">
+                        <img src="../assets/images/home-gray.png" alt="" class="icon-2">
+                        <span class="small ms-2  fw-bold card-font">大连协同天下电子商务科技有限公司 (8)</span>
+                    </div>
+                    <select class="form-select my-3 " aria-label="user-select-option">
+                        <option selected>开发部 (6)</option>
+                        <option value="1">市场部 (5)</option>
+                    </select>
+                    
+                    <select class="form-select small" aria-label="user-select-option">
+                        <option selected>Only online users</option>
+                        <option value="1">All</option>
+                    </select>
+                    <div class="input-group mt-3 mb-3 searchbar-with-icon">
+                        <input type="text" class="form-control" placeholder="Please input keywords" aria-label="" aria-describedby="button-addon2">
+                        <button class="btn btn-brown" type="button" id="reset"><img src="../assets/images/cards/close1.png" alt="" class="icon-1"></button>
+                        <button class="btn btn-brown border-1 border-start" type="button" id="button-addon2"><img src="../assets/images/search.png" alt="" class="input-search icon-2"></button>
+                        <button class="btn btn-brown border-1 border-start" type="button" id="button-addon2"><img src="../assets/images/cards/sort.png" alt="" class="icon-2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../node_modules/custom.js"></script>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/to_top.js"></script>
+    
+    <script>
+        var view_state = true;
+        $('#see-more').text('See more');
+
+        $('#see-more').click(function() {
+            if(view_state) {
+                $('.more').addClass('d-block').removeClass('d-none');
+                $('#see-more').text('See less');
+            } else {
+                $('.more').addClass('d-none').removeClass('d-block');
+                $('#see-more').text('See more');
+            }
+            view_state = !view_state;
+        })
+    </script>
+
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('initial-submit'))
+        myModal.show()
+    </script>
+</body>
+</html>
+
