@@ -2066,6 +2066,9 @@
     background-color: none !important;
     color: rgb(13, 78, 139);
   }
+  .bg-anony-mobile {
+    background-color: rgb(247, 248, 252) !important;
+  }
 }
 @media screen and (max-width: 1000px) {
   .bg-mobile-dark {

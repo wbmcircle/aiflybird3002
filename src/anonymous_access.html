@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/anonymous_style.css">
     <link rel="icon" href="../assets/images/login_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <div class="h-100" style="position: relative;">
@@ -16,17 +17,19 @@
         </a>
         <!-- banner -->
         <div class="d-flex flex-row-reverse banner">
-            <div class="d-none d-md-inline m-2 me-4" >
-                <select class="form-select border border-1 border-dark rounded-pill lh-1" aria-label="user-select-option">
-                    <option value="en" selected>English</option>
-                    <option value="ch">Chinese</option>
-                    <option value="ru">Russian</option>
-                </select>
+            <div class="d-none d-md-inline m-2" >
+                <div class="drop-down">
+                    <select name="options">
+                        <option class="en" value="en" data-image = '../assets/img/flag/rounded/united-states.png' style="background-image:url('../assets/img/flag/rounded/united-states.png');">English</option>
+                        <option class="fr" value="fr" data-image = '../assets/img/flag/rounded/china.png'  style="background-image:url('../assets/img/flag/rounded/china.png');" selected>Simplified Ch </option>
+                        <option class="nl" value="nl" data-image = '../assets/img/flag/rounded/taiwan.png' style="background-image:url('../assets/img/flag/rounded/taiwan.png');">Tranditional Ch</option>
+                    </select>
+                </div>
             </div>
         </div>
 
         <!-- content -->
-        <div class="d-flex m-2">
+        <div class="d-flex m-md-2">
             <!-- sidebar -->
             <div class="d-none d-md-inline me-1 bg-deep-dark rounded-3 mb-2 mb-md-0 card-font side ps-3" id="anony-sidebar">
 
@@ -63,7 +66,7 @@
             </div>
 
             <!-- members -->
-            <div class="px-0 p-md-3 pt-md-1 ms-md-1 bg-gray rounded-3 flex-grow-1">
+            <div class="px-0 p-md-3 pt-md-1 ms-md-1 bg-gray bg-anony-mobile rounded-3 flex-grow-1">
                 <!-- sidebar-toggle -->
                 <div class="d-none d-md-inline m-md-2">
                     <a class="text-decoration-none" id="menu-toggle" role="button">
@@ -74,8 +77,8 @@
 
                 
                 <!-- mobile-menu-field -->
-                <div class="d-md-none accordion small border-0 m-2" id="menu-accordion">
-                    <div class="accordion-item text-start border-0 mb-2 bg-gray">
+                <!-- <div class="d-md-none accordion small border-0 m-2" id="menu-accordion">
+                    <div class="accordion-item text-start border-0 mb-2 bg-gray bg-anony-mobile">
                         <a href="#" class="text-decoration-none p-0 px-2" role="button"
                         data-bs-toggle="collapse" data-bs-target="#menu-collapse" aria-expanded="true"
                         aria-controls="menu-collapse">
@@ -105,6 +108,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div> -->
+                <div class="d-flex d-md-none m-2">
+                    <a href="#" class="text-decoration-none p-0 px-2" role="button" data-bs-toggle="modal" data-bs-target="#menu-search">
+                            <img src="../assets/images/menu-button-of-three-horizontal-lines.png" alt="" class="icon-2">
+                    </a>
+                    <div class="drop-down-mobile">
+                        <select name="options">
+                            <option class="en" value="en" data-image = '../assets/img/flag/rounded/united-states.png' style="background-image:url('../assets/img/flag/rounded/united-states.png');">English</option>
+                            <option class="fr" value="fr" data-image = '../assets/img/flag/rounded/china.png'  style="background-image:url('../assets/img/flag/rounded/china.png');" selected>简体中文 </option>
+                            <option class="nl" value="nl" data-image = '../assets/img/flag/rounded/taiwan.png' style="background-image:url('../assets/img/flag/rounded/taiwan.png');">繁體中文</option>
+                        </select>
                     </div>
                 </div>
 
@@ -710,8 +725,8 @@
     </div>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
-    <script src="../node_modules/custom.js"></script>
-    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/select_flag.js"></script>
     <script src="../assets/js/to_top.js"></script>
     
     <script>
