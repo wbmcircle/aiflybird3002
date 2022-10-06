@@ -2707,6 +2707,7 @@ input:checked+.slider:before {
         outline: none;
         background: rgb(238, 236, 236);
     }
+
     .login-box .user-box input::placeholder {
         font-size: 12px;
     }
@@ -2904,6 +2905,15 @@ input:checked+.slider:before {
         width: 70px !important;
         height: 70px !important;
     }
+    #verify-option {
+        /* text-decoration: underline; */
+        font-size: 14px;
+        margin-top: 12px;
+        color: rgb(13, 78, 139);
+        font-weight: 600;
+        padding-left: 12px;
+        cursor: pointer;
+    }
 }
 @media screen and (min-width: 1200px) {
     .main {
@@ -2972,9 +2982,18 @@ input:checked+.slider:before {
         background: transparent;
     }
 
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+    }
+    input[data-autocompleted] {
+        background-color: transparent !important;
+    }
+    
     .login-box .user-box label {
         position: absolute;
-        top: 0;
+        top: -20px;
+        /* top: 0; */
         left: 0;
         padding: 10px 0;
         font-size: 16px;
@@ -3098,7 +3117,8 @@ input:checked+.slider:before {
     
     .login-field .user-box label {
         position: absolute;
-        top: 0;
+        /* top: 0; */
+        top: -20px;
         left: 0;
         padding: 10px 0;
         font-size: 16px;
@@ -3138,6 +3158,17 @@ input:checked+.slider:before {
     
     .meeting-item:hover .hover-show {
         display:block;
+    }
+    #verify-option {
+        /* text-decoration: underline; */
+        font-size: 14px;
+        margin-top: 4px;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    #verify-option:hover {
+        color: rgb(201, 193, 193);
     }
 }
 @media screen and (max-height: 400px) {

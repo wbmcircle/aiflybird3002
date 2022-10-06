@@ -49,7 +49,7 @@
                 </div>
                 <form class="mx-1">
                     <div class="moblie-form mt-2">
-                        <div class="user-box">
+                        <div class="user-box" id="verify-target">
                             <input type="text" name="" required="" placeholder="Phone Number">
                             <label>Phone Number</label>
                         </div>
@@ -64,10 +64,13 @@
                                 <a href="#" class="d-lg-none mx-0" style="color: rgb(13, 78, 139);">Refresh</a>
                             </a>
                         </div>
-                        <div class="user-box">
-                            <input type="text" class=" mb-0" name="" required="" style="width: 50%;" placeholder="Code">
-                            <label>Code</label>
+                        <div class="user-box" id="verify-code">
+                            <input type="text" class=" mb-0" name="" required="" style="width: 50%;" placeholder="SMS Code">
+                            <label>Verify SMS Code</label>
                             <button class="code-btn  mb-0">Get Code</button>
+                        </div>
+                        <div id="verify-option">
+                            <span>Verify by E-mail</span>
                         </div>
                         <div class="d-none d-md-flex justify-content-end mt-md-4 mb-md-3 btn-wrap step-action-pc-btn">
                             <a href="login.html" class="login-submit me-3">
@@ -223,6 +226,26 @@
         })
         $('#to-completion-moblie').click(function(){
             show_completion()
+        })
+    </script>
+    <script>
+        // veriry option
+        const by_mail = 'Verify by E-mail'
+        const by_sms = 'Verify by SMS'
+        $('#verify-option span').click(function(){
+            if($(this).text() == by_mail) {
+                $(this).text(by_sms)
+                $('#verify-target input').attr('placeholder', 'Email Address')
+                $('#verify-target label').text('Email Address')
+                $('#verify-code input').attr('placeholder', 'Email Verify Code')
+                $('#verify-code label').text('Verify Code')
+            } else {
+                $(this).text(by_mail)
+                $('#verify-target input').attr('placeholder', 'Phone Number')
+                $('#verify-target label').text('Phone Numbers')
+                $('#verify-code input').attr('placeholder', 'SMS Code')
+                $('#verify-code label').text('SMS Code')
+            } 
         })
     </script>
 </body>
