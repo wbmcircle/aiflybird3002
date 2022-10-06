@@ -2908,10 +2908,9 @@ input:checked+.slider:before {
     #verify-option {
         /* text-decoration: underline; */
         font-size: 14px;
-        margin-top: 12px;
+        margin-top:4px;
         color: rgb(13, 78, 139);
         font-weight: 600;
-        padding-left: 12px;
         cursor: pointer;
     }
 }
@@ -3167,8 +3166,9 @@ input:checked+.slider:before {
         font-weight: 500;
         cursor: pointer;
     }
-    #verify-option:hover {
-        color: rgb(201, 193, 193);
+    #verify-option input:checked {
+        background-color: #e8704b;
+        border-color: #e8704b;
     }
 }
 @media screen and (max-height: 400px) {
