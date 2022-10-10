@@ -2103,6 +2103,40 @@
     height: 35.2px;
     font-size: 14px;
   }
+  .btn-group.mobile-view-mode .active-btn {
+    background-color: #003F82;
+  }
+  #event-list-month .for-day {
+    text-align: left;
+  }
+  #event-list-month .for-day .date {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(240, 236, 236, 0.527);
+    padding: 5px 8px;
+  }
+  #event-list-month .for-day .event {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    padding: 8px;
+    padding-left: 12px;
+  }
+  #event-list-month .for-day .event .event-symbol {
+    display: block;
+    width: 4px;
+    height: 15px;
+    background-color: #0d6efd;
+    margin-right: 8px;
+  }
+  #event-list-month .for-day .event .event-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #event-list-month .for-day .event.active {
+    background-color: rgba(238, 119, 119, 0.411);
+  }
 }
 @media screen and (min-width: 1000px) {
   .dept-on-pop, .dept-on-main {

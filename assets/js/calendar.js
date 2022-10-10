@@ -174,9 +174,33 @@ $('.today').click(() => toToday())
 rendarCalendar()
 // $('.previous').click(() => toPrev())
 // $('.next').click(() => toNext())
-$('.calendar .dates .date').bind('click', function(){
-    $('#none-item').addClass('d-none')
-    $('#event-board').removeClass('d-none')
-})
+
 $('.calendar-action .prev').click(() => toPrev())
 $('.calendar-action .next').click(() => toNext())
+
+// mobile events list
+$('.calendar .dates .date').bind('click', function(){
+    const screenW = screen.width;
+    $('#none-item').addClass('d-none')
+    $('#event-board').removeClass('d-none')
+    if(screenW < 990) {
+        $('#calendar').addClass('d-none').removeClass('d-flex')
+        $('#event-list').addClass('d-flex').removeClass('d-none')
+    } 
+})
+
+$('#back2cal').bind('click', function(){
+    $('#event-list').addClass('d-none').removeClass('d-flex')
+    $('#calendar').addClass('d-flex').removeClass('d-none')
+})
+ // mobile view mode
+$('.month-view').bind('click', function(){
+    $('#event-list-month').addClass('d-none').removeClass('d-flex')
+    $('#event-list').addClass('d-none').removeClass('d-flex')
+    $('#calendar').addClass('d-flex').removeClass('d-none')
+})
+$('.day-view').bind('click', function(){
+    $('#event-list-month').addClass('d-flex').removeClass('d-none')
+    $('#calendar').addClass('d-none').removeClass('d-flex')
+    $('#event-list').addClass('d-none').removeClass('d-flex')
+})

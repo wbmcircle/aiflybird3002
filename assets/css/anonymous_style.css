@@ -2984,7 +2984,9 @@ input:checked+.slider:before {
     input:-webkit-autofill,
     input:-webkit-autofill:focus {
         transition: background-color 600000s 0s, color 600000s 0s;
+        -webkit-box-shadow: 0 0 0 0 #0070a1 inset !important;
     }
+    
     input[data-autocompleted] {
         background-color: transparent !important;
     }

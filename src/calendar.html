@@ -696,15 +696,20 @@
                 </div>
             </div>
             <div class="d-flex flex-column my-md-1 overflow-auto flex-grow-1">
-                <div class="d-flex align-items-center mt-2 mx-3 mt-md-4 mb-md-2">
+                <div class="d-flex align-items-center mt-3 mx-3 mt-md-4 mb-md-2">
                     <img src="../assets/icon/calendar.png" alt="" class="icon-md">
                     <h5 class="ms-3 mb-0">Calendar</h5>
                     <!-- <a href="#" class="d-md-none ms-3" id="calendar-panel-switch">
                         <img src="../assets/img/chevron-down.svg" alt="">
                     </a> -->
+                    
                     <a href="#" class="d-md-none ms-3" data-bs-toggle="modal" data-bs-target="#create-event">
                         <img src="../assets/icon/plus-circle.svg" alt="" class="icon-sm">
                     </a>
+                    <div class="btn-group ms-auto mobile-view-mode">
+                        <button class="btn btn-primary btn-sm view-mode active-btn month-view">Month</button>
+                        <button class="btn btn-primary btn-sm view-mode border-blue border-0 border-start day-view">Day</button>
+                    </div>
                 </div>
                 <div class="d-none d-md-flex flex-column flex-md-row justify-content-between p-3 bg-deep-dark m-3 rounded-3 mb-2 mt-0 mt-md-3"  id="calendar-panel">
                     <div class="btn-group mt-md-0 px-5 px-md-0">
@@ -742,7 +747,7 @@
                     </div>
                 </div>
                 <div class="flex-grow-1 d-flex flex-column flex-md-row mt-2 mt-md-1 rounded-3 overflow-auto bg-deep-dark bg-mobile-dark p-lg-2 mx-md-3 py-lg-3">
-                    <div class="flex-md-grow-1 d-flex flex-column mx-lg-2 bg-white lg-shadow mx-3 my-2 my-md-0 p-lg-2 rounded-3 pt-0 relative">
+                    <div class="flex-md-grow-1 d-flex flex-column mx-lg-2 bg-white lg-shadow mx-3 my-2 my-md-0 p-lg-2 rounded-3 pt-0 relative" id="calendar">
                         <div class="d-flex align-items-center py-md-3 ps-md-2 justify-content-center justify-content-lg-end px-3 py-2">
                             <div class="d-flex justify-content-center align-items-center d-lg-none mt-2 mb-1 relative">
                                 <h5 class="mb-0 year-month"></h5>
@@ -786,91 +791,6 @@
                             </div>
                         </div>
                         <div class="flex-grow-1 fly-scrollbar overflow-auto">
-                            <!-- <table class="calendar-table w-100 overflow-auto">
-                                <thead>
-                                    <tr>
-                                        <td class="weekend">Sun</td>
-                                        <td>Mon</td>
-                                        <td>Tue</td>
-                                        <td>Web</td>
-                                        <td>Thur</td>
-                                        <td>Fri</td>
-                                        <td class="weekend">Sat</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><span class="weekend">28</span></td>
-                                        <td><span>29</span></td>
-                                        <td><span>30</span></td>
-                                        <td><span>1</span></td>
-                                        <td>
-                                            <span>2</span>
-                                            <div class="event-noti">
-                                                <div class="event"><label class="event-not-started me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-started me-1" ></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-ended me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-other me-1"></label>Test (21:00-22:00)</div>
-                                            </div>
-                                        </td>
-                                        <td><span>3</span></td>
-                                        <td><span class="weekend">4</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="weekend">5</span></td>
-                                        <td><span>6</span></td>
-                                        <td>
-                                            <span>7</span>
-                                            <div class="event-noti">
-                                                <div class="event"><label class="event-not-started me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-started me-1" ></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-ended me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-other me-1"></label>Test (21:00-22:00)</div>
-                                            </div>
-                                        </td>
-                                        <td><span>8</span></td>
-                                        <td><span>9</span></td>
-                                        <td><span>10</span></td>
-                                        <td><span class="weekend">11</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="weekend">12</span>
-                                            <div class="event-noti">
-                                                <div class="event"><label class="event-not-started me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-started me-1" ></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-ended me-1"></label>Test (21:00-22:00)</div>
-                                                <div class="event"><label class="event-other me-1"></label>Test (21:00-22:00)</div>
-                                            </div>
-                                        </td>
-                                        <td><span>13</span></td>
-                                        <td><span>14</span></td>
-                                        <td><span>15</span></td>
-                                        <td><span>16</span></td>
-                                        <td><span>17</span></td>
-                                        <td><span class="weekend">18</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="weekend">19</span></td>
-                                        <td><span>20</span></td>
-                                        <td><span>21</span></td>
-                                        <td><span>22</span></td>
-                                        <td><span>23</span></td>
-                                        <td><span>24</span></td>
-                                        <td class="selected"><span class="weekend">25</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="weekend">26</span></td>
-                                        <td><span>27</span></td>
-                                        <td><span>28</span></td>
-                                        <td><span>29</span></td>
-                                        <td><span>30</span></td>
-                                        <td><span>31</span></td>
-                                        <td><span class="weekend">1</span></td>
-                                    </tr>
-                                </tbody>
-                            </table> -->
-                           
                             <!-- new calendar -->
                             <div class="calendar fly-scrollbar">
                                 <div class="days"></div>
@@ -879,9 +799,12 @@
                             <span class="today d-md-none">Today</span>
                         </div>
                     </div>
-                    <div class="flex-grow-1 flex-md-grow-0 d-flex flex-column mx-3 lg-shadow mb-2 m-md-0 mx-md-2 overflow-auto board">
+                    <div class="d-none d-lg-flex flex-column flex-grow-1  mx-3 my-2 lg-shadow m-md-0 mx-md-2 overflow-auto board" id="event-list">
                         <div class="d-flex flex-column  bg-white rounded-3 h-100 text-center">
-                            <h6 class="border-bottom py-2">Jan 21 Friday</h6>
+                            <div class="d-flex align-items-center justify-content-md-center py-2 px-1 border-bottom" style="background-color: rgba(240, 236, 236, 0.527);">
+                                <img src="../assets/icon/chevron-left.svg" alt="" class="icon-sm me-2 d-md-none" id="back2cal">
+                                <h6 class="mb-0">Oct 10 Mon</h6>
+                            </div>
                             <div class="flex-grow-1  overflow-auto  px-0 fly-scrollbar ">
                                 <div id='none-item'>
                                     <img src="../assets/icon/empty.png" alt="" class="d-none d-md-inline" style="height: 90px; width:120px">
@@ -894,7 +817,7 @@
                                     <div class="event-item hover active-background">
                                         <div class="d-flex flex-column align-items-start active-border ps-2">
                                             <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>10:30</span>
                                         </div>
                                         <div class="flex-grow-1">
                                             <span class="fw-bold">Test Event</span>
@@ -902,48 +825,102 @@
                                     </div>
                                     <div class="event-item hover">
                                         <div class="d-flex flex-column align-items-start  ps-2">
-                                            <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>11:00</span>
+                                            <span>12:00</span>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-bold">Test Event</span>
+                                            <span class="fw-bold">Meeting</span>
                                         </div>
                                     </div>
                                     <div class="event-item hover ">
                                         <div class="d-flex flex-column align-items-start  ps-2">
-                                            <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>15:00</span>
+                                            <span>15:30</span>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-bold">Test Event</span>
+                                            <span class="fw-bold">Reading Books</span>
                                         </div>
                                     </div>
                                     <div class="event-item hover ">
                                         <div class="d-flex flex-column align-items-start  ps-2">
-                                            <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>17:00</span>
+                                            <span>18:00</span>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-bold">Test Event</span>
+                                            <span class="fw-bold">Health Club</span>
                                         </div>
                                     </div>
                                     <div class="event-item hover ">
                                         <div class="d-flex flex-column align-items-start  ps-2">
-                                            <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>21:00</span>
+                                            <span>21:30</span>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-bold">Test Event</span>
+                                            <span class="fw-bold">Shopping</span>
                                         </div>
                                     </div>
                                     <div class="event-item hover ">
                                         <div class="d-flex flex-column align-items-start  ps-2">
-                                            <span>10:00</span>
-                                            <span>30 mins</span>
+                                            <span>21:30</span>
+                                            <span>22:30</span>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-bold">Test Event</span>
+                                            <span class="fw-bold">Cooking Cookie</span>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-none flex-column flex-grow-1  mx-3 my-2 lg-shadow overflow-auto board" id="event-list-month">
+                        <div class="d-flex flex-column  bg-white rounded-3 h-100 text-center">
+                            <div class="d-flex align-items-center justify-content-center py-2 px-1 border-bottom" style="background-color: rgba(240, 236, 236, 0.527);">
+                                <h5 class="mb-0">October</h5>
+                            </div>
+                            <div class="flex-grow-1  overflow-auto  px-0 fly-scrollbar ">
+                                <div class="for-day">
+                                    <span class="date">Oct 3 Monday (4)</span>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                </div>
+                                <div class="for-day">
+                                    <span class="date">Oct 15 Saturday (3)</span>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                </div>
+                                <div class="for-day">
+                                    <span class="date">Oct 21 Friday (2)</span>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
+                                    </div>
+                                    <div class="event">
+                                        <span class="event-symbol"></span>
+                                        <span class="event-title">Test Event</span>
                                     </div>
                                 </div>
                             </div>
@@ -2226,7 +2203,11 @@
             none_board.classList.add('d-none')
             event_board.classList.add('d-flex')
         }
-        
+        $('#event-list-month .event').click(function(){
+            $('#event-list-month .event').removeClass('active')
+            $(this).addClass('active')
+            event_action.show();
+        })
     </script>
     
 
@@ -2283,10 +2264,6 @@
     $(document).on('click', '.calendar .dates .date .date-num', function(){
         $('.calendar .dates .date .date-num').removeClass('current')
         $(this).addClass('current')
-    })
-    $(document).on('click', '.calendar .dates .date', function(){
-        $('#none-item').addClass('d-none')
-        $('#event-board').removeClass('d-none')
     })
     $('#mobile-picker').click(function(){
         $('.mobile-range').toggle()
