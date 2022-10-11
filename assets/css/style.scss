@@ -686,6 +686,106 @@
     .friend-search-icon:hover{
         fill: rgb(79, 79, 79);
     }
+    .pub-bulletin {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        width: 100%;
+        font-size: 14px;
+        .symbol {
+            width: 15px;
+            min-width: 15px;
+            height: 15px;
+            fill: rgb(109, 107, 107);
+            margin-right: 8px;
+        }
+        .title {
+            flex-grow: 1;
+            text-decoration: none;
+            color: #000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .pub-time {
+            white-space: nowrap;
+            margin: 0 8px;
+        }
+        .count {
+            white-space: nowrap;
+            margin: 0 8px;
+            width: 30px;
+            min-width: 30px;
+            text-align: center;
+        }
+        &:hover {
+            background-color: rgba(247, 142, 142, 0.261);
+        }
+    }
+    .news-preview {
+        .news-banner  {
+            width: 100%;
+            min-height: 150px;
+            background-image: url('../img/news_back.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .breadcrumb {
+            .breadcrumb-item {
+                span {
+                    font-weight: 500 !important;
+                    // color: #999595 !important;
+                }
+            }
+        }
+        .news-preview-header {
+            // font-size: 16px !important;
+            font-size: 28px;
+            margin-top: 24px;
+            padding: 5px 0;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 0;
+            font-weight:  600;
+        }
+        #myTabContent{
+            .news-information {
+                display: flex;
+                justify-content: center;
+                color: rgb(131, 130, 130);
+                font-size: 14px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 3px;
+                padding-bottom: 8px;
+                border-bottom: solid 3px rgb(46, 45, 45);
+                .fw-bold {
+                    font-weight: 500;
+                }
+            }
+            h1.news-header {
+                font-size: 24px !important;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            p.news-content {
+                // font-size: 13px !important;
+                margin-bottom: 4px;
+                line-height: 1.5;
+            }
+            .attach {
+                color: #f33f2b;
+                font-weight: 600;
+                margin-top: 12px;
+                margin-bottom: 8px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1200px) {
     
@@ -1598,19 +1698,24 @@
             }
         }
         .news-preview-header {
-            font-size: 16px !important;
+            font-size: 20px !important;
             padding: 5px 0;
             text-align: center;
             line-height: 1.2;
             margin-bottom: 0;
-            font-weight:  500;
+            font-weight:  550;
+            margin-top: 12px;
         }
         #myTabContent{
             .news-information {
+                display: flex;
+                justify-content: center;
                 font-size: 13px;
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 3px;
+                border-bottom: solid 1px #000;
+                padding-bottom: 4px;
                 .fw-bold {
                     font-weight: 500;
                 }
@@ -1624,6 +1729,13 @@
                 font-size: 13px !important;
                 margin-bottom: 4px;
                 line-height: 1.5;
+            }
+            .attach {
+                color: #f33f2b;
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 12px;
+                margin-bottom: 8px;
             }
         }
     }
