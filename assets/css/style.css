@@ -1576,6 +1576,7 @@
   .news-preview .breadcrumb .breadcrumb-item span {
     font-weight: 500 !important;
     color: #999595 !important;
+    font-size: 13px;
   }
   .news-preview .breadcrumb .breadcrumb-item a {
     text-decoration: none !important;
@@ -1584,7 +1585,7 @@
     color: rgb(13, 78, 139) !important;
   }
   .news-preview .news-preview-header {
-    font-size: 20px !important;
+    font-size: 16px !important;
     padding: 5px 0;
     text-align: center;
     line-height: 1.2;
@@ -1606,7 +1607,7 @@
     font-weight: 500;
   }
   .news-preview #myTabContent h1.news-header {
-    font-size: 18px !important;
+    font-size: 16px !important;
     text-align: center;
     margin-bottom: 5px;
   }
