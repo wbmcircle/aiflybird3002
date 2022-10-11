@@ -753,6 +753,9 @@
     margin-top: 12px;
     margin-bottom: 8px;
   }
+  .bg-news {
+    background-color: rgb(243, 254, 255);
+  }
 }
 @media screen and (max-width: 1200px) {
   .content {
